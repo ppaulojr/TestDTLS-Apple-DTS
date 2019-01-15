@@ -10,11 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    var useCell = true
+    @IBOutlet weak var ipField: UITextField!
+    @IBOutlet weak var ifaceSelector: UISegmentedControl!
+    @IBAction func connect(_ sender: Any) {
+        let cell = CellularUDPSession(gateway: Endpoint(address: ipField.text ?? "", port: "80", version: .four))
+        useCell = (ifaceSelector.selectedSegmentIndex == 0)
+        if cell.doSSLHandshake(useCell) == 0 {
+            presentAlert("Works")
+        } else {
+            presentAlert("Does not work")
+        }
     }
-
-
+    
+    func presentAlert(_ message: String!) {
+        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .destructive, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }
+
+
+
 
