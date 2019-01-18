@@ -20,6 +20,7 @@
 		825B978E21EE4457007C60E2 /* sockaddr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B978D21EE4457007C60E2 /* sockaddr.swift */; };
 		825B979021EE47F6007C60E2 /* NetInterfaceTypeQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B978F21EE47F6007C60E2 /* NetInterfaceTypeQuery.swift */; };
 		825B979421EE50F5007C60E2 /* HexDump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B979321EE50F5007C60E2 /* HexDump.swift */; };
+		825B979921F0F797007C60E2 /* NewDTLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B979821F0F797007C60E2 /* NewDTLS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		825B978D21EE4457007C60E2 /* sockaddr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sockaddr.swift; sourceTree = "<group>"; };
 		825B978F21EE47F6007C60E2 /* NetInterfaceTypeQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetInterfaceTypeQuery.swift; sourceTree = "<group>"; };
 		825B979321EE50F5007C60E2 /* HexDump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexDump.swift; sourceTree = "<group>"; };
+		825B979821F0F797007C60E2 /* NewDTLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDTLS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				825B978221EE4261007C60E2 /* CellUDPSession.swift */,
 				825B978721EE42A7007C60E2 /* DTLSiOS.swift */,
 				825B978B21EE4345007C60E2 /* UDPSocket.swift */,
+				825B979821F0F797007C60E2 /* NewDTLS.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				825B976521EE4244007C60E2 /* ViewController.swift in Sources */,
 				825B978C21EE4345007C60E2 /* UDPSocket.swift in Sources */,
 				825B978821EE42A7007C60E2 /* DTLSiOS.swift in Sources */,
+				825B979921F0F797007C60E2 /* NewDTLS.swift in Sources */,
 				825B976321EE4244007C60E2 /* AppDelegate.swift in Sources */,
 				825B978E21EE4457007C60E2 /* sockaddr.swift in Sources */,
 				825B979021EE47F6007C60E2 /* NetInterfaceTypeQuery.swift in Sources */,
