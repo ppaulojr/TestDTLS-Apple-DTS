@@ -17,8 +17,7 @@ class DTLSiOSNew {
     
     init(gateway: Endpoint) {
         let param = NWParameters.dtls
-
-        param.prohibitedInterfaceTypes = [.cellular]
+        param.prohibitedInterfaceTypes = [.wifi]
         connection = NWConnection(host: NWEndpoint.Host(gateway.address), port: 80, using: param)
         connection?.stateUpdateHandler = { (newState) in
             switch(newState) {
